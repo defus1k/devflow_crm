@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "devflow_crm"
+version = "0.1.0"
+authors = [
+  { name="Owner" },
+]
+description = "CRM система для автоматизації процесів"
+dependencies = [
+    "aiogram>=3.0.0",
+    "fastapi>=0.100.0",
+    "uvicorn>=0.23.0",
+    "sqlalchemy>=2.0.0",
+    "aiosqlite",
+    "pydantic-settings>=2.0.0",
+    "google-api-python-client",
+    "google-auth-httplib2",
+    "google-auth-oauthlib",
+    "aiohttp"
+]
+requires-python = ">=3.10"
+
+[tool.setuptools]
+packages = ["app"]

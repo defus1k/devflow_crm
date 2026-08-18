@@ -1,0 +1,301 @@
+devflow_crm/
+│
+├── alembic/
+│
+├── app/
+│   │
+│   ├── core/
+│   │   ├── config.py1
+│   │   ├── logger.py1
+│   │   ├── security.py1
+│   │   ├── scheduler.py1
+│   │   └── constants.py1
+│   │
+│   ├── db/
+│   │   ├── base.py1
+│   │   ├── session.py1
+│   │   ├── database.py1
+│   │   └── migrations.py1
+│   │
+│   ├── models/
+│   │   ├── ticket.py1
+│   │   ├── balance.py1
+│   │   ├── kpi.py1
+│   │   ├── log.py1
+│   │   └── __init__.py1
+        ├── user.py1
+│   │   ├── order.py1
+│   │   ├── payment.py1
+│   │   ├── review.py1
+│   │   ├── portfolio.py1
+│   │   ├── application.py1
+│   │   ├── withdrawal.py1
+├── statistics.py1
+│   │   ├── notification.py1
+│   │   ├── warning.py1
+│   │
+│   ├── repository/
+│   │   ├── user_repository.py1
+│   │   ├── order_repository.py1
+│   │   ├── payment_repository.py1
+│   │   └── ...
+│   │
+│   ├── services/
+│   │   ├── order_service.py1
+│   │   ├── payment_service.py1
+│   │   ├── employee_service.py1
+│   │   ├── salary_service.py1
+│   │   ├── statistics_service.py1
+│   │   ├── notification_service.py1
+│   │   ├── forum_service.py1
+│   │   └── security_service.py1
+│   │
+│   ├── handlers/
+│   │   ├── client/
+│   │   ├── manager/
+│   │   ├── developer/
+│   │   ├── owner/
+│   │   ├── admin/
+│   │   └── common/
+│   │
+│   ├── keyboards/
+│   │   ├── client/
+│   │   ├── manager/
+│   │   ├── developer/
+│   │   ├── owner/
+│   │   └── common/
+│   │
+│   ├── states/
+│   │   ├── order.py1
+│   │   ├── application.py1
+│   │   ├── payment.py1
+│   │   ├── review.py1
+│   │   └── ticket.py1
+│   │
+│   ├── middlewares/
+│   │   ├── auth.py1
+│   │   ├── role.py1
+│   │   ├── antiflood.py1
+│   │   ├── logger.py1
+│   │   └── maintenance.py1
+│   │
+│   ├── filters/
+│   │
+│   ├── scheduler/
+│   │   ├── reminders.py1
+│   │   ├── salary.py1
+│   │   ├── backup.py1
+│   │   └── tiktok_check.py1
+│   │
+│   ├── api/
+│   │   ├── payments/
+│   │   ├── webhooks/
+│   │   └── healthcheck.py11111
+│   │
+│   ├── integrations/
+│   │   ├── cryptobot.py1
+│   │   ├── stripe.py1
+│   │   ├── github.py1
+│   │   ├── telegram.py1
+│   │   ├── discord.py1
+│   │   └── google_drive.py11111
+│   │
+│   ├── utils/
+│   │
+│   ├── templates/
+│   │
+│   └── locales/
+│
+├── tests/
+│
+├── backups/
+│
+├── logs/
+│
+├── nginx/
+│
+├── docker-compose.yml
+├── Dockerfile
+├── requirements.txt
+├── pyproject.toml1
+├── .env
+├── .env.example1
+└── main.py1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+handlers/
+│
+├── __init__.py
+│
+├── common/
+│   ├── __init__.py11111
+│   ├── start.py11111
+│   ├── help.py11111
+│   ├── faq.py11111
+│   ├── reviews.py11111
+│   ├── support.py11111
+│   ├── contacts.py11111
+│   ├── worker_application.py11111
+│   └── errors.py11111
+│1
+├── client/
+│   ├── __init__.py11111
+│   ├── menu.py11111
+│   ├── create_order.py11111
+│   ├── my_orders.py11111
+│   ├── order_details.py11111
+│   ├── order_payment.py11111
+│   ├── order_accept.py11111
+│   ├── revisions.py11111
+│   ├── profile.py11111
+│   ├── notifications.py11111
+│   └── reviews.py11111
+│
+├── manager/
+│   ├── __init__.py11111
+│   ├── dashboard.py11111
+│   ├── available_orders.py11111
+│   ├── my_orders.py11111
+│   ├── take_order.py11111
+│   ├── briefing.py11111
+│   ├── transfer_to_developer.py11111
+│   ├── reports.py11111
+│   ├── statistics.py11111
+│   ├── salary.py11111
+│   └── profile.py11111
+│
+├── developer/
+│   ├── __init__.py11111
+│   ├── dashboard.py11111
+│   ├── available_orders.py11111
+│   ├── my_orders.py11111
+│   ├── take_order.py11111
+│   ├── submit_work.py11111
+│   ├── revisions.py11111
+│   ├── salary.py11111
+│   ├── statistics.py11111
+│   └── profile.py11111
+│
+├── owner/
+│   ├── __init__.py11111
+│   ├── dashboard.py11111
+│   ├── orders.py11111
+│   ├── employees.py11111
+│   ├── applications.py11111
+│   ├── finance.py11111
+│   ├── statistics.py11111
+│   ├── payments.py11111
+│   ├── reviews.py11111
+│   ├── blacklist.py11111
+│   ├── settings.py11111
+│   ├── broadcast.py11111
+│   └── logs.py11111
+│
+└── admin/
+    ├── __init__.py11111
+    ├── dashboard.py11111
+    ├── users.py11111
+    ├── orders.py11111
+    ├── warnings.py11111
+    ├── tickets.py11111
+    ├── reviews.py11111
+    ├── blacklist.py11111
+    ├── broadcasts.py11111
+    └── logs.py11111
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ```text
+keyboards/
+│
+├── __init__.py11111
+│
+├── common/
+│   ├── __init__.py11111
+│   ├── start.py11111
+│   ├── menu.py11111
+│   ├── back.py11111
+│   ├── confirm.py11111
+│   ├── cancel.py11111
+│   ├── pagination.py11111
+│   ├── faq.py11111
+│   └── support.py11111
+│
+├── client/
+│   ├── __init__.py11111
+│   ├── menu.py11111
+│   ├── create_order.py11111
+│   ├── my_orders.py11111
+│   ├── order.py11111
+│   ├── payment.py11111
+│   ├── review.py11111
+│   ├── profile.py11111
+│   └── settings.py11111
+│
+├── manager/
+│   ├── __init__.py11111
+│   ├── dashboard.py11111
+│   ├── orders.py11111
+│   ├── briefing.py11111
+│   ├── statistics.py11111
+│   ├── salary.py11111
+│   └── profile.py11111
+│
+├── developer/
+│   ├── __init__.py11111
+│   ├── dashboard.py11111
+│   ├── orders.py11111
+│   ├── submit.py11111
+│   ├── statistics.py11111
+│   ├── salary.py11111
+│   └── profile.py11111
+│
+├── owner/
+│   ├── __init__.py11111
+│   ├── dashboard.py11111
+│   ├── employees.py11111
+│   ├── orders.py11111
+│   ├── finance.py11111
+│   ├── statistics.py11111
+│   ├── settings.py11111
+│   ├── broadcast.py11111
+│   └── applications.py11111
+│
+└── admin/
+    ├── __init__.py11111
+    ├── dashboard.py11111
+    ├── users.py11111
+    ├── orders.py11111
+    ├── tickets.py11111
+    ├── warnings.py11111
+    ├── reviews.py11111
+    ├── blacklist.py11111
+    └── broadcast.py
+```
